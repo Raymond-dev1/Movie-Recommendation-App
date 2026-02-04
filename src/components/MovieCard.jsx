@@ -5,15 +5,15 @@ export default function MovieCard ({movie}){
     const [like, setToFavorite] =useState('◊')
 
     function addToFavorite(){
-        setToFavorite(like=== '◆')
+        setToFavorite(like==='◊'? '◆':'◊')
     }
 
-    return<div className="card">
-        <div className = "poster">
+    return<div className="bg-white rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 ">
+        <div className = "text-blue-300 font-bold">
             <img src ={movie.url} alt={movie.title} />
             <div className="overlay">
                 <button className="favorite" onClick={addToFavorite}>
-                    ◊
+                    {like}
                 </button>
             </div>
             <div className="movie-title">
