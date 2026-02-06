@@ -5,19 +5,20 @@ export default function MovieCard ({movie}){
     const [like, setToFavorite] =useState('◊')
 
     function addToFavorite(){
+        // e.preventDefualt()
         setToFavorite(like==='◊'? '◆':'◊')
     }
 
-    return<div className="bg-white rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 ">
-        <div className = "text-blue-300 font-bold">
-            <img src ={movie.url} alt={movie.title} />
+    return<div className="p-8 m-1 shadow-xl/20 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+        <div className = "">
+            <img className="rounded-xl" src ={movie.url} alt={movie.title} /> 
             <div className="overlay">
                 <button className="favorite" onClick={addToFavorite}>
                     {like}
                 </button>
             </div>
-            <div className="movie-title">
-               <h3> {movie.title}</h3>
+            <div className=" movie-title  ">
+               <span className="title  text-2xl" ><h3> {movie.title}</h3></span>
                <p>{movie.release_date}</p>
             </div>
         </div>
