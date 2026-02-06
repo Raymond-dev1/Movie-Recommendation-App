@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar";
 export default function App() {
   return (
     <div>
-      <main className="font-serif text-blue-600 min-h-screen  bg-black scroll-smooth md:scroll-auto ">
+      <main className="font-serif text-white min-h-screen  bg-black scroll-smooth md:scroll-auto ">
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
