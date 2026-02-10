@@ -8,7 +8,6 @@ import { MovieProvider } from "./context/MovieContext";
 export default function App() {
   return (
     <MovieProvider>
-    <div>
       <main className="font-serif text-blue-500 min-h-screen bg-black scroll-smooth md:scroll-auto ">
         <NavBar />
         <Routes>
@@ -16,7 +15,6 @@ export default function App() {
           <Route path="/favorites" element={<Favorite />} />
         </Routes>
       </main>
-    </div>
     </MovieProvider>
   );
 }
