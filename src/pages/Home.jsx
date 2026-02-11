@@ -32,6 +32,7 @@ export default function Home() {
     if (loading) return;
 
     setLoading(true);
+    setError(null);
 
     try {
       const searchResults = await searchMovies(searchQuery);
@@ -39,7 +40,7 @@ export default function Home() {
         setError('Movie Not Found!!')
       }
       setMovies(searchResults);
-      // setError(null);
+      
     } catch (err) {
       setError("Failed to search movies...");
     } finally {
@@ -55,7 +56,7 @@ export default function Home() {
     <div className="Home  ">
       <form
         onSubmit={handleSearch}
-        className="class-form m-1 p-8 rounded-full "
+        className="class-form m-1 p-3 rounded-full "
       >
         <input
           type="text"
