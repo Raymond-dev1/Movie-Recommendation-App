@@ -5,7 +5,6 @@ export default function favorite() {
   const { favorites } = useMovieContext();
 
   if (favorites.length > 0) {
-    console.log("favorites from fav page:", favorites);
     return (
       <div className="m-2 min-h-screen bg-black  ">
         <h2 className="bg-blue-500 rounded-ee-2xl  p-2 shadow-3xl font-bold m-1 absolute top-19 left-0 text-white ">Your Favorites</h2>

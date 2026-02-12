@@ -56,7 +56,7 @@ export default function Home() {
     <div className="Home  ">
       <form
         onSubmit={handleSearch}
-        className="class-form m-1 p-3 rounded-full "
+        className="class-form m-1 p-3 rounded-full  flex justify-center "
       >
         <input
           type="text"
