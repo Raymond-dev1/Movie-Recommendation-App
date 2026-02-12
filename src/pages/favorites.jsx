@@ -18,9 +18,11 @@ export default function favorite() {
   }
 
   return (
-    <div className="favorites-empty  font-extrabold   px-5 py-5 rounded-2xl m-2 h-32 w-64 bg-white/30 backdrop-blur-sm ">
+    <div className="flex justify-center ">
+    <div className="favorites-empty font-extrabold  mt-10 px-5 py-5 rounded-2xl m-1 h-32 w-full sm:w-3/4 md:w-1/2 bg-white/30 backdrop-blur-sm">
       <h3 className="text-red-600">No favorties yet!!</h3>
       <p className="text-white">Start adding movies to your favorites.</p>
+    </div>
     </div>
   );
 } 
