@@ -10,7 +10,7 @@ export default function MovieCard ({movie}){
             else addToFavorite(movie)
     }
 
-    return<div className="p-8 m-1 shadow-xl/20 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+    return<div className="p-8 m-1 shadow-xl/20 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
         <div className = "">
             <img className="rounded-xl" src ={`https://image.tmdb.org/t/p/w500${movie.poster_path   }`} alt={movie.title} /> 
             <div className="overlay">

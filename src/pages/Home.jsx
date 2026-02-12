@@ -80,7 +80,7 @@ export default function Home() {
       {loading ? (
         <div className="">Loading...</div>
       ) : (
-        <div className="movie-card inline-grid grid-cols-3 gap-4 shadow-xl ">
+        <div className="movie-card inline-grid grid-cols-1 gap-4 md:grid-cols-3 shadow-xl">
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

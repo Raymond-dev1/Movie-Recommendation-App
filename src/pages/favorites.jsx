@@ -9,7 +9,7 @@ export default function favorite() {
     return (
       <div className="m-2 min-h-screen bg-black  ">
         <h2 className="bg-blue-500 rounded-ee-2xl  p-2 shadow-3xl font-bold m-1 absolute top-19 left-0 text-white ">Your Favorites</h2>
-        <div className="movie-card inline-grid grid-cols-3 gap-4 shadow-xl p-3">
+        <div className="movie-card inline-grid grid-cols-1 gap-4 md:grid-cols-3 shadow-xl p-3">
           {favorites.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}     
