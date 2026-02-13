@@ -12,9 +12,8 @@ This is a web-app that renders movies on the client side via external API call .
 
 I built this project to layer my understanding of  frontend , react , state management , and modern styling with tailwind.
 
-
 ## Installation 
 - Node latest version installed.
 - pnpm install.
-
+- pnpm run dev
 
